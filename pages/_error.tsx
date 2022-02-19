@@ -6,7 +6,7 @@ type Props = {
 
 export default function Error({ statusCode }: Props) {
   React.useEffect(() => {
-    Router.push("/");
+    Router.push("/login");
   }, []);
 
   return (

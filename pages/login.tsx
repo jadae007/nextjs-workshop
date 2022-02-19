@@ -1,20 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import { createStyles } from '@mui/styles';
+import loginStyle from '../styles/loginStyle'
 
 type Props = {}
-const styles = createStyles ({
-  section: {
-    color:"red",
-    fontSize: 100,
-   },
-})
 
-const useStyles = makeStyles({
-  section: {
-   color:"red",
-  },
-});
+const useStyles = makeStyles(loginStyle);
 
 
 export default function Login({}: Props) {
@@ -23,7 +13,7 @@ export default function Login({}: Props) {
   return (
     <div>
       <h1>Login</h1>
-      <div className={classes.section}>test</div>
+      <div className={classes.subtitle}>test</div>
 
     </div>
   )
