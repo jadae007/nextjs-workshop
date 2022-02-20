@@ -29,13 +29,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const onClickLogin = () => {
-  Router.push("/stock")
-};
-
-export default function Login({}: Props) {
+export default function Register({}: Props): React.ReactElement {
   const classes = useStyles();
-
   return (
     <React.Fragment>
       <div className={classes.container}>
@@ -44,7 +39,7 @@ export default function Login({}: Props) {
             className={classes.media}
             component="img"
             height="140"
-            image="/static/img/next_login.jpg"
+            image="/static/img/next_register.jpg"
             alt="green iguana"
           />
           <CardContent>
@@ -77,19 +72,18 @@ export default function Login({}: Props) {
                 variant="contained"
                 color="primary"
                 className={classes.submit}
-                onClick={onClickLogin}
               >
-                Sign In
+                Register
               </Button>
               <Button
                 fullWidth
                 size="small"
                 color="primary"
                 onClick={() => {
-                  Router.push("/register");
+                  Router.push("/login");
                 }}
               >
-                Register
+                Cancel
               </Button>
             </form>
           </CardContent>
