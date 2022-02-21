@@ -12,15 +12,15 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Header />
-      <Menu />
+      {/* <Menu /> */}
       <main style={{
         marginTop:20,
-        paddingLeft: 204,
+        
       }}>
       <Toolbar />
       <Container
         style={{
-          backgroundColor: "red",
+          // backgroundColor: "red",
         }}
       >
         {children}
